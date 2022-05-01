@@ -1,0 +1,273 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Webserver by Jozef</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 3px 3px 3px 3px;
+
+    background-color: #D8DBE2;
+
+    font-family: Verdana, sans-serif;
+    font-size: 11pt;
+    text-align: center;
+  }
+
+  div.main_page {
+    position: relative;
+    display: table;
+
+    width: 800px;
+
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 0px 0px 0px;
+
+    border-width: 2px;
+    border-color: #212738;
+    border-style: solid;
+
+    background-color: #FFFFFF;
+
+    text-align: center;
+  }
+
+  div.page_header {
+    height: 110px;
+    width: 100%;
+
+    background-color: #F5F6F7;
+  }
+
+  div.page_header span {
+    margin: 15px 0px 0px 50px;
+
+    font-size: 180%;
+    font-weight: bold;
+  }
+
+  div.page_header img {
+    margin: 3px 0px 0px 40px;
+
+    border: 0px 0px 0px;
+  }
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.table_of_contents_item {
+    clear: left;
+
+    width: 100%;
+
+    margin: 4px 0px 0px 0px;
+
+    background-color: #FFFFFF;
+
+    color: #000000;
+    text-align: left;
+  }
+
+  div.table_of_contents_item a {
+    margin: 6px 0px 0px 6px;
+  }
+
+  div.content_section {
+    margin: 3px 3px 3px 3px;
+
+    background-color: #FFFFFF;
+
+    text-align: left;
+  }
+
+  div.content_section_text {
+    padding: 4px 8px 4px 8px;
+
+    color: #000000;
+    font-size: 100%;
+  }
+
+  div.content_section_text pre {
+    margin: 8px 0px 8px 0px;
+    padding: 8px 8px 8px 8px;
+
+    border-width: 1px;
+    border-style: dotted;
+    border-color: #000000;
+
+    background-color: #F5F6F7;
+
+    font-style: italic;
+  }
+
+  div.content_section_text p {
+    margin-bottom: 6px;
+  }
+
+  div.content_section_text ul, div.content_section_text li {
+    padding: 4px 8px 4px 16px;
+  }
+
+  div.section_header {
+    padding: 3px 6px 3px 6px;
+	margin-top: 20px;
+
+    background-color: #8E9CB2;
+
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 112%;
+    text-align: center;
+  }
+
+  div.section_header_red {
+    background-color: #CD214F;
+  }
+
+  div.section_header_grey {
+    background-color: #9F9386;
+  }
+
+  .floating_element {
+    position: relative;
+    float: left;
+  }
+
+  div.table_of_contents_item a,
+  div.content_section_text a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div.table_of_contents_item a:link,
+  div.table_of_contents_item a:visited,
+  div.table_of_contents_item a:active {
+    color: #000000;
+  }
+
+  div.table_of_contents_item a:hover {
+    background-color: #000000;
+
+    color: #FFFFFF;
+  }
+
+  div.content_section_text a:link,
+  div.content_section_text a:visited,
+   div.content_section_text a:active {
+    background-color: #DCDFE6;
+
+    color: #000000;
+  }
+
+  div.content_section_text a:hover {
+    background-color: #000000;
+
+    color: #DCDFE6;
+  }
+
+  div.validator {
+  }
+  
+  .button {
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+#more {display: none;}
+
+
+    </style>
+	
+	
+	<script type='text/javascript'>
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/jozeflogo-1.png" alt="Debian Logo" class="floating_element"/>
+        <span class="floating_element">
+          Linode Debian Webserver
+        </span>
+		
+      </div>
+	  <br>
+
+
+        <div class="section_header section_header_red">
+          <div id="about"></div>
+          Jozef's webserver.
+        </div>
+        <div class="content_section_text">
+		<button font-size="30" class="button button2"><a href="index.php">Main Site</a></button>
+          <p>
+                This is a webserver i created on the 29th of march 2022.
+          </p>
+
+
+          <p>
+                If you are a normal user of this web site and don't know what this page is
+                about, then this probably means that you clearly don't own an air fryer. This site is currently available due to
+                linux learning and shit.
+                If the problem persists, please contact the site's administrator (+421 950 813 336).
+          </p>
+	
+<p align="center" >
+<img src="logo_crafter.jpg" width="576" height="384"><br>
+Archív starých stránok z WebDesignu:
+<button class="button button1"><a href="/webdesign/starwars.html">Star Wars 2</a></button> <button class="button button2"><a href="/webdesign/internet_baking.html">Internet Banking</a></button><button class="button button3"><a href="/webdesign/wow.html">Pepe Sells Windows</a></button>
+<br>More pages:
+<button class="button button4"><a href="/stranky/kitchen.php">Kitchen Visualisation Demo</a></button>
+<button class="button button4"><a href="https://www.technicpack.net/modpack/sps-modpack-2032.1911784">SPS Snina Minecraft modpack</a></button>
+<button class="button button4"><a href="/stranky/calc.php">IP Calculator</a></button>
+ </p>
+ 	  <p align="center">I have two youtube channels
+	  <span id="dots">...</span><span id="more">
+, one for uploading gaming clips and "funny" videos. Funny in quotes because funny things are subjective and I don't think I'm that funny to classify myself as funny. The other one for proper youtube stuff
+<br><iframe width="500" height="300" src="https://www.youtube.com/embed/jU_RH2aWC_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</span></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+</p>
+ </body>
+</html>
+

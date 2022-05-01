@@ -1,0 +1,8 @@
+kurz2 https://uuapp.plus4u.net/uu-coursekit-courseg01/756a90817709494ba38f4ade712c8a4f
+kurz1 https://uuapp.plus4u.net/uu-coursekit-courseg01/7b2911aed73f4c1aa2d0de547b5b3206/executivesContent/lessonDetail?code=LC_1606740603481
+LaTeX https://latex.codecogs.com/eqneditor/editor.php
+
+bookkit --------------------------
+uuCourseKit https://uuapp.plus4u.net/uu-bookkit-maing01/78462435-8a34054669eb4af68b1bc8788617da18/book/page?code=content
+kurz1 https://uuapp.plus4u.net/uu-bookkit-maing01/551a22e3095d442eb2eddbebee8bd979/book/page?code=07969875
+kurz2 https://uuapp.plus4u.net/uu-bookkit-maing01/fb00d1d34b784b14b0faa961463e152b/book/page?code=home
